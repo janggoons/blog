@@ -1,0 +1,16 @@
+{%- comment -%} Minimal Mistakes 4.26.2 archive-single + 카테고리 라벨 · 날짜 표시 {%- endcomment -%}
+{% if post.id %}
+  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% else %}
+  {% assign title = post.title %}
+{% endif %}
+<div class="{{ include.type | default: 'list' }}__item">
+  <article class="archive__item post-card" itemscope itemtype="https://schema.org/CreativeWork">
+    <p class="post-card__meta">
+      {%- if post.categories.size > 0 %}<a class="post-card__cat" href="{{ '/categories/' | relative_url }}#{{ post.categories[0] | slugify }}">{{ post.categories[0] }}</a>{% endif %}
+      {%- if post.date %}<time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: site.date_format }}</time>{% endif %}
+    </p>
+    <h2 class="archive__item-title no_toc" itemprop="headline"><a href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a></h2>
+    {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 140 }}</p>{% endif %}
+  </article>
+</div>

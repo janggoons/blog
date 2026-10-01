@@ -1,0 +1,21 @@
+---
+layout: home
+author_profile: false
+classes: reading
+---
+
+<section class="blog-hero">
+  <p class="blog-hero__lead">컴퓨팅 교육 · AI 교육을 연구하고 가르치며 <strong>읽고, 준비하고, 돌아본 것</strong>을 기록합니다.</p>
+  <p class="blog-hero__by">
+    <img src="https://janggoons.github.io/assets/images/profile.jpg" alt="" class="blog-hero__avatar">
+    <span><a href="https://janggoons.github.io/">장윤재</a> · 강원대학교 강릉자유전공학부</span>
+  </p>
+  {%- if site.categories.size > 0 %}
+  <nav class="cat-chips" aria-label="카테고리">
+    {%- assign cats = site.categories | sort %}
+    {%- for c in cats %}
+    <a class="cat-chip" href="{{ '/categories/' | relative_url }}#{{ c[0] | slugify }}">{{ c[0] }} <span>{{ c[1].size }}</span></a>
+    {%- endfor %}
+  </nav>
+  {%- endif %}
+</section>

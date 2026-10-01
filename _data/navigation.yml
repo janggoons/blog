@@ -1,0 +1,10 @@
+# 상단 메뉴 — 순서대로 표시됩니다
+main:
+  - title: "전체 글"
+    url: /posts/
+  - title: "카테고리"
+    url: /categories/
+  - title: "태그"
+    url: /tags/
+  - title: "연구 사이트 ↗"
+    url: https://janggoons.github.io/
