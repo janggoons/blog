@@ -1,4 +1,4 @@
-# 장윤재 블로그 (janggoons.github.io/blog)
+# JangGoon's Blog (janggoons.github.io/blog)
 
 연구 사이트(https://janggoons.github.io, 저장소 `janggoons.github.io`)와 **분리된 블로그**입니다.
 Jekyll + [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) 테마를 글 읽기 중심 레이아웃으로 바꿔 씁니다.

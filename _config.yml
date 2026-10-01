@@ -1,5 +1,5 @@
 # ─────────────────────────────────────────────
-#  장윤재 블로그 — Jekyll + Minimal Mistakes (글 읽기 중심 레이아웃)
+#  JangGoon's Blog — Jekyll + Minimal Mistakes (글 읽기 중심 레이아웃)
 #  주소: https://janggoons.github.io/blog/
 #  연구 사이트(janggoons.github.io)와는 별도 저장소(janggoons/blog)입니다.
 #  이 파일을 수정한 뒤에는 GitHub에 올려야 반영됩니다 (1~2분 소요).
@@ -10,8 +10,8 @@ minimal_mistakes_skin: "default"
 
 # 사이트 기본 정보
 locale: "ko-KR"
-title: "장윤재 블로그"
-masthead_title: "장윤재 블로그"
+title: "JangGoon's Blog"
+masthead_title: "JangGoon's Blog"
 title_separator: "|"
 name: "장윤재"
 description: "컴퓨팅 교육 · AI 교육을 연구하고 가르치며 읽고, 준비하고, 돌아본 것을 기록합니다."
