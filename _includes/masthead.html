@@ -1,0 +1,18 @@
+{%- comment -%}
+  블로그 전용 헤더 (Minimal Mistakes 기본 masthead 대체)
+  — 가운데 정렬: 블로그 이름 · 한 줄 소개 · 작은 텍스트 메뉴 · 검색
+{%- endcomment -%}
+<header class="blog-masthead">
+  <div class="blog-masthead__inner">
+    <a class="blog-title" href="{{ '/' | relative_url }}">{{ site.masthead_title | default: site.title }}</a>
+    {% if site.description %}<p class="blog-tagline">{{ site.description }}</p>{% endif %}
+    <nav class="blog-nav" aria-label="블로그 메뉴">
+      {%- for link in site.data.navigation.main %}
+      <a href="{{ link.url | relative_url }}"{% if link.url contains '://' %} class="blog-nav__ext"{% endif %}>{{ link.title }}</a>
+      {%- endfor %}
+      {%- if site.search == true %}
+      <button class="search__toggle blog-nav__search" type="button" aria-label="검색"><i class="fas fa-search" aria-hidden="true"></i></button>
+      {%- endif %}
+    </nav>
+  </div>
+</header>

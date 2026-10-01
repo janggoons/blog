@@ -1,0 +1,10 @@
+{%- comment -%} 블로그 전용 푸터 — 한 줄 {%- endcomment -%}
+<div class="blog-footer">
+  <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
+  <span aria-hidden="true">·</span>
+  <a href="https://janggoons.github.io/">연구 사이트</a>
+  <span aria-hidden="true">·</span>
+  <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+  <span aria-hidden="true">·</span>
+  <span>&copy; {{ site.time | date: '%Y' }} 장윤재</span>
+</div>

@@ -74,14 +74,84 @@ html { font-size: 16px; }
   .sidebar__right { display: none; }
 }
 
+// ═══════════════ 헤더 (블로그 전용) ═══════════════
+// 연구 사이트의 좌우 분리형 상단 메뉴 대신, 가운데 정렬 한 단 헤더
+
+.blog-masthead {
+  border-bottom: 1px solid $border-color;
+  background: #fff;
+}
+.blog-masthead__inner {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 2.6em 1em 1.4em;
+  text-align: center;
+}
+.blog-title {
+  display: inline-block;
+  font-size: 1.9rem;
+  font-weight: 700;
+  letter-spacing: -.01em;
+  color: $text-color;
+  text-decoration: none;
+  &:hover { color: $primary-color; }
+}
+.blog-tagline {
+  margin: .5em 0 1.2em;
+  font-size: .9rem;
+  line-height: 1.6;
+  color: $gray;
+}
+.blog-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: .3em 1.4em;
+  font-size: .88rem;
+  a {
+    color: $gray;
+    text-decoration: none;
+    padding: .15em 0;
+    border-bottom: 2px solid transparent;
+    &:hover { color: $primary-color; border-bottom-color: $primary-color; }
+  }
+}
+.blog-nav__search {
+  margin: 0;
+  padding: .2em .3em;
+  border: 0;
+  background: transparent;
+  color: $gray;
+  cursor: pointer;
+  font-size: .9rem;
+  &:hover { color: $primary-color; }
+}
+
+// 검색 화면도 같은 폭으로
+.search-content .search-content__inner-wrap { max-width: 46rem; }
+
+// ═══════════════ 푸터 (블로그 전용) ═══════════════
+
+.page__footer {
+  margin-top: 4em;
+  background: transparent;
+  border-top: 1px solid $border-color;
+  color: $gray;
+  footer { max-width: 46rem; margin: 0 auto; padding: 1.6em 1em 2.4em; }
+}
+.blog-footer {
+  text-align: center;
+  font-size: .8rem;
+  a { color: $gray; text-decoration: none; &:hover { color: $primary-color; } }
+  span[aria-hidden] { margin: 0 .5em; color: $border-color; }
+}
+
 // ═══════════════ 첫 화면 ═══════════════
 
 .blog-hero {
-  margin: .5em 0 2.5em;
-  padding-bottom: 1.8em;
-  border-bottom: 1px solid $border-color;
+  margin: 1em 0 1.5em;
 }
-.blog-hero__lead { font-size: 1.15em; line-height: 1.7; color: $text-color; margin-bottom: .8em; }
 .blog-hero__by {
   display: flex;
   align-items: center;
@@ -104,7 +174,16 @@ html { font-size: 16px; }
   &:hover { background: mix($primary-color, #fff, 8%); }
 }
 
-.archive__subtitle { border-bottom: 0; margin-bottom: .5em; color: $gray; font-size: .85em; letter-spacing: .05em; }
+.layout--home .archive__subtitle { display: none; }   // "최근 글" 제목 숨김 — 바로 글 목록
+
+// 글 화면: 관련 글은 가볍게
+.page__related {
+  margin-top: 3em;
+  padding-top: 1.5em;
+  border-top: 1px solid $border-color;
+  .page__related-title { font-size: .85em; color: $gray; letter-spacing: .03em; }
+}
+.page__meta, .page__taxonomy { font-size: .8em; }
 
 // ═══════════════ 글 목록 카드 ═══════════════
 

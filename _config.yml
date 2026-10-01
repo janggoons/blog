@@ -14,7 +14,7 @@ title: "장윤재 블로그"
 masthead_title: "장윤재 블로그"
 title_separator: "|"
 name: "장윤재"
-description: "컴퓨팅 교육 · AI 교육을 연구하고 가르치며 읽고 생각한 것을 기록합니다."
+description: "컴퓨팅 교육 · AI 교육을 연구하고 가르치며 읽고, 준비하고, 돌아본 것을 기록합니다."
 url: "https://janggoons.github.io"
 baseurl: "/blog"                 # 하위 경로 사이트 — 링크는 항상 relative_url 필터 사용
 repository: "janggoons/blog"
@@ -113,7 +113,7 @@ defaults:
       author_profile: false
       read_time: true
       show_date: true
-      share: true
+      share: false
       related: true
       comments: true
   - scope:
